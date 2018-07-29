@@ -1,6 +1,6 @@
 {
   "name": "gen-next-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generator for next js app",
   "main": "./bin/index.js",
   "preferGlobal": true,

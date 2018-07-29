@@ -1,0 +1,26 @@
+{
+  "name": "gen-next-js",
+  "version": "1.0.0",
+  "description": "Generator for next js app",
+  "main": "./bin/index.js",
+  "preferGlobal": true,
+  "bin": {
+    "tugen": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steThera/gen-next-js"
+  },
+  "homepage": "https://github.com/steThera/gen-next-js",
+  "scripts": {},
+  "keywords": [
+    "generator",
+    "next-js"
+  ],
+  "author": "DuyPT",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "commander": "^2.15.1"
+  }
+}

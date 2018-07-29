@@ -1,7 +1,7 @@
 # Intro
 Generator next js for react server side rendering 
 
-# Stack technical
+# Using library
 
 - Next js supports react server side rendering
 - Redux supports manage state

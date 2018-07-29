@@ -14,7 +14,9 @@
   "homepage": "https://github.com/steThera/gen-next-js",
   "scripts": {},
   "keywords": [
-    "generator",
+    "generate",
+    "serverside-rendering",
+    "reactjs",
     "next-js"
   ],
   "author": "DuyPT",

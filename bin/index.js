@@ -5,12 +5,12 @@ const program = require('commander');
 const path = require('path');
 const fs = require('fs');
 
-const TEMPLATE_DIR = path.join(__dirname, '..', 'templates');
+const TEMPLATE_DIR = path.join(__dirname, '..', 'template');
 const VERSION = require('../package').version;
 const _0755 = parseInt('0755', 8);
 
 program
-  .name('tgen')
+  .name('gen-next-js')
   .version(VERSION, '    --version')
   .usage('<dir>')
   .parse(process.argv);

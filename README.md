@@ -1,5 +1,14 @@
-# gen-next-js
+# Intro
 Generator next js for react server side rendering 
+
+# Stack technical
+
+- Next js supports react server side rendering
+- Redux supports manage state
+- Redux form supports handling form
+- Style using Sass
+- Testing using Jest
+- Eslint check style
 
 # Installation
 ```

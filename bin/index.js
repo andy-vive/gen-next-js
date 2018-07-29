@@ -56,7 +56,7 @@ function main() {
     'pages/index.js',
     'pages/_document.js',
     'services/sample.service.js',
-    'static/sample.css',
+    'static/sample.css'
   ];
 
   Promise.all([
@@ -65,12 +65,26 @@ function main() {
     mkdir(path.join(destPath, 'pages'), _0755),
     mkdir(path.join(destPath, 'services'), _0755),
     mkdir(path.join(destPath, 'static'), _0755)
-  ])
-    .then(_ =>
-      // Copy files to destination path
-      files.map(createPathFromTemplateTo(destPath)).forEach(copy)
-    )
-    .then(_ => log('Generate successfully!'));
+  ]).then(_ => {
+    Promise.all([
+      mkdir(path.join(destPath, 'commons/redux'), _0755),
+      mkdir(path.join(destPath, 'commons/components'), _0755),
+      mkdir(path.join(destPath, 'modules/home'), _0755)
+    ]).then(_ => {
+      Promise.all([
+        mkdir(path.join(destPath, 'commons/components/Layout'), _0755)
+      ]).then(_ => {
+        Promise.all([
+          mkdir(path.join(destPath, 'commons/components/Layout/Body'), _0755),
+          mkdir(path.join(destPath, 'commons/components/Layout/Header'), _0755)
+        ])
+          .then(_ =>
+            files.map(createPathFromTemplateTo(destPath)).forEach(copy)
+          )
+          .then(_ => log('Generate successfully!'));
+      });
+    });
+  });
 }
 
 main();

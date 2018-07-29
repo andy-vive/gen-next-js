@@ -5,7 +5,7 @@
   "main": "./bin/index.js",
   "preferGlobal": true,
   "bin": {
-    "tugen": "./bin/index.js"
+    "gen-next-js": "./bin/index.js"
   },
   "repository": {
     "type": "git",

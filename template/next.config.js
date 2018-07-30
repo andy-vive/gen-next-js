@@ -1,6 +1,6 @@
 /* eslint-disable */
 const withSass = require('@zeit/next-sass');
-const ExtractTextPlugin = require('../../../../.cache/typescript/2.9/node_modules/@types/extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config');
 
 module.exports = withSass({

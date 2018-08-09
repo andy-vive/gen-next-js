@@ -8,8 +8,8 @@ const generator = require('../lib/generator');
 program
   .name('gen-next-js')
   .version(VERSION, '--version')
-  .option('-i, --i18n', 'With i18n')
-  .usage('<dir>')
+  .option('--i18n', 'Generate NextJS app with i18n multilanguage configuration')
+  .usage('<dir> <option>')
   .parse(process.argv);
 
 function main() {

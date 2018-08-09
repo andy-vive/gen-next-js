@@ -38,6 +38,8 @@ function main() {
     'package.json',
     '.babelrc',
     '.editorconfig',
+    '.eslintrc',
+    '.gitignore',
     'env-config.js',
     'jest.config.js',
     'jest.setup.js',

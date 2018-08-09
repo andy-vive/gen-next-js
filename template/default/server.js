@@ -14,7 +14,7 @@ app.prepare().then(() => {
   // use next.js
   server.get('*', (req, res) => {
     const parsedUrl = parse(req.url, true);
-    const rootStaticFiles = ['/css', '/javascript', '/img'];
+    const rootStaticFiles = ['/css', '/js', '/img'];
     const pathname = parsedUrl.pathname || '';
     const isServeStatic = rootStaticFiles.some(i => pathname.includes(i));
     if (isServeStatic) {

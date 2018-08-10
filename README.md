@@ -22,6 +22,12 @@ cd example
 gen-next-js .
 ```
 
+#Options
+```
+-h,   --help          # Print the generator's options and usage
+      --i18n          # Generate NextJS app with i18n multilanguage configuration
+```
+
 # Output directory structure
 ```
 ├── commons

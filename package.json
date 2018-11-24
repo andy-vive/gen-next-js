@@ -17,7 +17,9 @@
     "generate",
     "serverside-rendering",
     "reactjs",
-    "next-js"
+    "next-js",
+    "steengen",
+    "steenify"
   ],
   "author": "DuyPT",
   "license": "MIT",
